@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url('./fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ADICIONANDO ESTILO AOS CONTAINERS À ESQUERDA */
+.container{
+    display: flex;
+    background-color: rgba(244, 244, 242, 1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 2px solid rgba(206, 206, 206, 1);
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.div__card{
+    padding-bottom: 100px;
+    border-bottom: 2px solid rgba(206, 206, 206, 1);
+}
+
+.carousel__container {
+    position: relative;
+    overflow: visible;
+    padding: 0 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+/* ADICIONANDO ESTILO AOS CONTAINERS À DIREITA */
+.card__details{
+    width: 65%;
+    padding: 2em 4em;
+}
+
+.menu__navegacao{
+    display: flex;
+}
+
+.list__menu{
+    display: flex;
+    list-style: none;
+}
+
+.list__item{
+    margin-right: 10px; 
+    border-right: 1px solid rgba(155, 155, 152, 0.5); 
+    padding-right: 10px; 
+}
+
+.list__item a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(155, 155, 152, 1);
+}
+
+.list__item:last-child {
+    margin-right: 0; /* Removendo espaçamento à direita do último item */
+    border-right: none; /* Removendo borda à direita do último item */
+}
