@@ -99,3 +99,8 @@ button {
     margin-right: 0; /* Removendo espaçamento à direita do último item */
     border-right: none; /* Removendo borda à direita do último item */
 }
+
+.card__number{
+    display: flex;
+    justify-content: space-evenly;
+}
